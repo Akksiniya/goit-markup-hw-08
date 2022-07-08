@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  </head>
+
+  <body>
+    <!--Шапка-->
+    <!-- <header class="header">
+      <div class="container header__container">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo logo--header link">
+            <span class="logo__start">Web</span
+            ><span class="logo__end logo__end--dark">Studio</span>
+          </a>
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Студия</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link link nav-list__link--current current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./img/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link link">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./img/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header> -->
+
+    <!--Основное-->
+    <main>
+      <section class="section">
+        <div class="container">
+          <!--Скрытый заголовок-->
+          <h1 class="visually-hidden">Наши работы</h1>
+          <ul class="filter list">
+            <li class="filter__item">
+              <button type="button" class="filter__button current">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="project list">
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf1-dt.jpg 1x, ./img/pf1-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf1-tab.jpg 1x, ./img/pf1-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf1-mob.jpg 1x, ./img/pf1-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf1-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container project__container--align">
+                  <h2 class="project__title">Технокряк</h2>
+                  <p class="project__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf2-dt.jpg 1x, ./img/pf2-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf2-tab.jpg 1x, ./img/pf2-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf2-mob.jpg 1x, ./img/pf2-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf2-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Постер New Orlean vs Golden Star</h2>
+                  <p class="project__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf3-dt.jpg 1x, ./img/pf3-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf3-tab.jpg 1x, ./img/pf3-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf3-mob.jpg 1x, ./img/pf3-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf3-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Ресторан Seafood</h2>
+                  <p class="project__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf4-dt.jpg 1x, ./img/pf4-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf4-tab.jpg 1x, ./img/pf4-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf4-mob.jpg 1x, ./img/pf4-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf4-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Проект Prime</h2>
+                  <p class="project__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf5-dt.jpg 1x, ./img/pf5-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf5-tab.jpg 1x, ./img/pf5-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf5-mob.jpg 1x, ./img/pf5-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf5-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Проект Boxes</h2>
+                  <p class="project__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf6-dt.jpg 1x, ./img/pf6-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf6-tab.jpg 1x, ./img/pf6-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf6-mob.jpg 1x, ./img/pf6-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf6-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="project__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf7-dt.jpg 1x, ./img/pf7-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf7-tab.jpg 1x, ./img/pf7-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf7-mob.jpg 1x, ./img/pf7-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf7-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Издание Limited Edition</h2>
+                  <p class="project__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf8-dt.jpg 1x, ./img/pf8-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf8-tab.jpg 1x, ./img/pf8-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf8-mob.jpg 1x, ./img/pf8-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf8-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Проект LAB</h2>
+                  <p class="project__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link link">
+                <div class="project__top">
+                  <picture>
+                    <source
+                      srcset="./img/pf9-dt.jpg 1x, ./img/pf9-dt-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./img/pf9-tab.jpg 1x, ./img/pf9-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./img/pf9-mob.jpg 1x, ./img/pf9-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/pf9-dt.jpg" alt="фото проекта" width="370" />
+                  </picture>
+                  <p class="project__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="project__container">
+                  <h2 class="project__title" lang="en">Growing Business</h2>
+                  <p class="project__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Подвал-->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="conteiner-tablet">
+          <div class="container-address">
+            <a href="/" class="logo logo--footer link">
+              <span class="logo__start">Web</span
+              ><span class="logo__end logo__end--light">Studio</span>
+            </a>
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="address__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="address__link address__link--position link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__link link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="position">
+            <h3 class="footer__title">присоединяйтесь</h3>
+            <ul class="soc-list list">
+              <li class="soc-list__icons">
+                <a href="" class="soc-list__link soc-list__link--grey link">
+                  <svg class="soc-list__icon soc-list__icon--white" width="20" height="20">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__icons">
+                <a href="" class="soc-list__link soc-list__link--grey link">
+                  <svg class="soc-list__icon soc-list__icon--white" width="20" height="20">
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__icons">
+                <a href="" class="soc-list__link soc-list__link--grey link">
+                  <svg class="soc-list__icon soc-list__icon--white" width="20" height="20">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__icons">
+                <a href="" class="soc-list__link soc-list__link--grey link">
+                  <svg class="soc-list__icon soc-list__icon--white" width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form>
+          <div class="subscription">
+            <div class="">
+              <label for="email" class="footer__title subscription__title">
+                Подпишитесь на рассылку
+              </label>
+              <input
+                class="subscription__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </div>
+            <button type="submit" class="subscription__button">
+              Подписаться
+
+              <svg class="subscription__icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

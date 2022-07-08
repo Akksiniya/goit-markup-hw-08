@@ -1,0 +1,108 @@
+body {
+  background-color: $main-color;
+  color: $text-color;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+/*-------- reset------*/
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+input {
+  outline: none;
+}
+/*-----general-----*/
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include mobile {
+    width: 480px;
+    max-width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    max-width: 768px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    max-width: 1200px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
+
+    @include desktop {
+      font-size: 36px;
+      line-height: 1.7;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.current {
+  color: $accent-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

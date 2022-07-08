@@ -1,0 +1,85 @@
+.subscription {
+  align-items: center;
+
+  @include desktop {
+    display: flex;
+    margin-left: 93px;
+    justify-content: baseline;
+    align-items: flex-end;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 450px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      width: 358px;
+      margin: 0;
+    }
+
+    height: 50px;
+    align-items: center;
+
+    padding-left: 16px;
+
+    background-color: inherit;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+      front-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+
+      letter-spacing: 0.03em;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &:focus {
+      border: 1px solid $accent-color;
+      color: $text-accent-color;
+    }
+  }
+
+  &__button {
+    @extend %button;
+    display: flex;
+    margin: 0 auto;
+
+    @include desktop {
+      margin-left: 12px;
+    }
+
+    justify-content: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      background-color: $bg-button;
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+    text-align: center;
+  }
+}

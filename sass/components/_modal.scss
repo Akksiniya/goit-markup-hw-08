@@ -1,0 +1,237 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 93px 15px;
+
+  overflow-y: scroll;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1) rotate(-180deg);
+}
+
+.modal {
+  // max-width: 528px;
+  // height: 581px;
+  width: 100%;
+  max-width: 450px;
+
+  // width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: $main-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include desktop {
+    max-width: 528px;
+    height: 581px;
+  }
+  // transform: translate(-50%, -50%) scale(1) rotate(0);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__close {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+}
+
+.data {
+  padding: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    // line-height: 23px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $text-color;
+
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.86;
+    letter-spacing: 0.01em;
+
+    color: $text-sec-color;
+    position: relative;
+  }
+
+  &__input {
+    margin-top: 10px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+
+  &__input--main {
+    height: 40px;
+    padding-left: 42px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input--comment {
+    outline: none;
+
+    resize: none;
+    padding: 12px 16px;
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.38;
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  &__input:focus + &__icon {
+    fill: $accent-color;
+  }
+
+  &__button {
+    @extend %button;
+    display: inline-block;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      background-color: $bg-button;
+    }
+  }
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+.agreement {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: start;
+  align-items: center;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+  color: $text-sec-color;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $text-logo-color;
+    border-radius: 3px;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input:checked + &__icon {
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  &__link {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+
+    letter-spacing: 0.03em;
+    color: $accent-color;
+
+    &::before {
+      content: '';
+      margin-right: 3px;
+    }
+
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+}
