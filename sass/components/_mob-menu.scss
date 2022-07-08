@@ -77,7 +77,6 @@
 
   color: $text-color;
 
-  // position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -119,93 +118,6 @@
   }
 }
 
-// .mob-button {
-//   // display: inline-flex;
-//   display: block;
-//   border: none;
-//   cursor: pointer;
-//   background-color: transparent;
-//   // margin: 10px 0;
-//   margin-left: auto;
-//   // margin-top: 10px;
-//   // margin-bottom: 10px;
-//   padding: 0;
-
-//   @include tablet {
-//     display: none;
-//   }
-
-// &:hover .icon-menu,
-// &:focus .icon-menu,
-// &:hover .icon-cross,
-// &:focus .icon-cross {
-//   fill: $accent-color;
-// }
-// }
-
-// .icon-cross {
-//   fill: $text-color;
-// }
-
-// .icon-menu {
-//   fill: $text-logo-color;
-// }
-
-// .mob-button:hover,
-// .mob-button:focus {
-//   color: $accent-color;
-// }
-
-// .mob__icon {
-//   fill: currentColor;
-// }
-
-// .mob-button .icon-cross {
-//   display: none;
-// }
-
-// .mob-button.is-open .icon-cross {
-//   display: block;
-// }
-
-// .mob-button.is-open .icon-menu {
-//   display: none;
-// }
-
-// .mob-menu {
-//   display: flex;
-
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//     // position: fixed;
-//     position: absolute;
-//     z-index: 30;
-//     top: 100%;
-//     left: 0;
-//     width: 100%;
-//     background-color: $main-color;
-
-//     width: 100vw;
-//     height: auto;
-//     padding-top: 48px;
-//     padding-bottom: 48px;
-//     padding-left: 40px;
-
-//     &.is-open {
-//       display: flex;
-//       flex-direction: column;
-//     }
-
-//     // &.is-open .logo {
-//     //   display: none;
-//     // }
-//   }
-// }
-
-// .mob-menu.is-open {
-//   display: block;
-// }
-
 .mob-soc {
   @include tablet {
     display: none;
@@ -214,12 +126,6 @@
   display: flex;
   justify-content: baseline;
   position: relative;
-
-  // @media screen and (max-width: 479px) {
-  //   flex-wrap: wrap;
-  // }
-
-  // align-items: center;
 
   &__item:not(:last-child) {
     margin-right: 20px;
@@ -243,19 +149,4 @@
     color: $accent-color;
     position: relative;
   }
-
-  // &__link::after {
-  //   content: '';
-  //   position: absolute;
-  //   bottom: 10px;
-
-  //   width: 22px;
-  //   height: 0;
-  //   border: 1px solid rgba(33, 33, 33, 0.2);
-  //   transform: rotate(90deg);
-  // }
 }
-
-// .logo {
-//   display: none;
-// }

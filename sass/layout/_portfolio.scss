@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  // margin-bottom: -30px;
 
   &__link {
     display: block;
@@ -30,14 +29,7 @@
       width: calc((100% - 60px) / 3);
     }
 
-    // margin-left: 30px;
     background-color: $main-color;
-
-    // margin-bottom: 30px;
-
-    // &:nth-child(3n + 1) {
-    //   margin-left: 0;
-    // }
   }
 
   &__container {
@@ -83,6 +75,10 @@
     padding-right: 24px;
     padding-left: 24px;
 
+    @media screen and (max-width: 479px) {
+      padding-top: 130px;
+    }
+
     font-size: 18px;
     line-height: 1.56;
 
@@ -90,16 +86,10 @@
     color: $text-accent-color;
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(130%);
+    overflow-y: auto;
+
+    transform: translateY(110%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    //   @include mobile {
-    //     padding: 77px 24px;
-    //   }
-
-    //   @include tablet {
-    //   }
-    // }
   }
 
   .project__container--align {
