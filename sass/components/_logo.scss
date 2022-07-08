@@ -18,9 +18,17 @@
   }
 
   &--header {
-    margin-right: 95px;
+    margin-right: 70px;
     margin-top: auto;
     margin-bottom: auto;
+
+    @include tablet {
+      margin-right: 50px;
+    }
+
+    @include desktop {
+      margin-right: 95px;
+    }
   }
 
   &--footer {

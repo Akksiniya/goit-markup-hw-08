@@ -35,7 +35,6 @@ input {
 /*-----general-----*/
 .container {
   width: 100%;
-  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -111,6 +110,11 @@ img {
   padding: 10px 0;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
+}
 .header__container {
   display: flex;
   align-items: center;
@@ -165,7 +169,6 @@ img {
   .contacts {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -205,7 +208,7 @@ img {
   }
 }
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
@@ -372,9 +375,19 @@ img {
   color: #ffffff;
 }
 .logo--header {
-  margin-right: 95px;
+  margin-right: 70px;
   margin-top: auto;
   margin-bottom: auto;
+}
+@media screen and (min-width: 768px) {
+  .logo--header {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    margin-right: 95px;
+  }
 }
 .logo--footer {
   display: inline-block;
@@ -439,12 +452,16 @@ img {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-  max-width: 360px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -710,6 +727,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer .container-address {
     margin-bottom: 0;
+    text-align: left;
   }
 }
 .footer__title {
@@ -758,7 +776,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .position {
-    margin-left: 165px;
+    margin-left: 148px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -766,6 +784,7 @@ img {
     margin-left: 70px;
     margin-bottom: 0;
     margin-top: 12px;
+    text-align: left;
   }
 }
 
@@ -778,6 +797,7 @@ img {
     margin-left: 93px;
     justify-content: baseline;
     align-items: flex-end;
+    text-align: left;
   }
 }
 .subscription__title {
